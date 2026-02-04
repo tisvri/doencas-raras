@@ -8,3 +8,4 @@ wordcloud
 matplotlib 
 python-dotenv
 openpyxl
+altair<5
