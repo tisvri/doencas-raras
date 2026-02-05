@@ -21,7 +21,7 @@ st.set_page_config(
 	layout="wide"
     )
 caminho_logo = 'Logo svri texto preto.png'  
-st.sidebar.image(caminho_logo, use_column_width=True)  
+st.sidebar.image(caminho_logo, use_container_width=True)  
 
 # url = 'postgresql://db_nap_clinicaltrials_user:DVh4H1qjtyTF6N3X7hf4mb1mSddWPa57@dpg-cr7m52btq21c73d9vnhg-a.ohio-postgres.render.com/clinical'
  
@@ -66,7 +66,7 @@ polo = ler_api()
 ############################ Upload da base de dados: Clinical Trials (tratado anteriormente e salvo localmente) ############################
 @st.cache_data
 def ler_excel():
-    resultado = dr_ct = pd.read_excel("doencas_raras_final.xlsx", sheet_name= 0)
+    resultado = dr_ct = pd.read_excel("Base_Nova.xlsx", sheet_name= 0)
     return resultado
 
 #Título da Página principal
